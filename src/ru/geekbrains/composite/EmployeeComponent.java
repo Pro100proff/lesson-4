@@ -1,0 +1,20 @@
+package ru.geekbrains.composite;
+
+public abstract class EmployeeComponent {
+
+    public void print(){
+        throw new UnsupportedOperationException();
+    }
+
+    public void sleepOnWork(){
+        throw new UnsupportedOperationException();
+    }
+
+    public void addChild(EmployeeComponent e){
+        throw new UnsupportedOperationException();
+    }
+
+    public void removeChild(int index){
+        throw new UnsupportedOperationException();
+    }
+}
