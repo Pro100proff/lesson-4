@@ -8,7 +8,7 @@ public class Main {
         List<EmployeeComponent> composite = new LinkedList<>();
         EmployeeComponent ceo = new Manager(
                 "Владимир Владимирович Путин",
-                "Главное бизнес подразделение"
+                "Глава"
         );
         EmployeeComponent subManager = new Manager(
                 "Мишустин Михаил Владимирович",
@@ -30,8 +30,19 @@ public class Main {
         );
         subManager.addChild(developer1);
         subManager.addChild(developer2);
+
+        EmployeeComponent financialDeveloper = new Developer(
+                "Иванов Сергей",
+                "Senior Java Developer"
+        );
+        EmployeeComponent financialTester = new Developer(
+                "Иванов Алексей",
+                "Тестеровщик"
+        );
+        subManager2.addChild(financialDeveloper);
+        subManager2.addChild(financialTester);
 //        ceo.print();
 
-        ceo.sleepOnWork();
+        ceo.sleep();
     }
 }

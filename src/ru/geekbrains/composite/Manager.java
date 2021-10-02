@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Manager extends EmployeeComponent {
+
     private String name;
 
     private String department;
@@ -25,14 +26,16 @@ public class Manager extends EmployeeComponent {
     }
 
     @Override
-    public void sleepOnWork() {
-        System.out.println("На самом деле я не сплю, я работаю");
+    public void sleep() {
+        System.out.println("Я" + name + ", я сплю");
 
-        try {
-            subOrdinaries.forEach(EmployeeComponent::sleepOnWork);
-        } catch (Exception e) {
-
-        }
+            subOrdinaries.forEach(employeeComponent -> {
+                try {
+                    employeeComponent.sleep();
+                } catch (Exception e) {
+                    System.out.println("я разработчик, я не могу спать");
+                }
+            });
     }
 
     @Override

@@ -1,10 +1,12 @@
 package ru.geekbrains.bridge.after;
 
-public abstract class Animal {
+import ru.geekbrains.bridge.Animal;
+
+public abstract class AbstractAnimal implements Animal {
 
     protected MoveImplementor implementor;
 
-    public Animal(MoveImplementor implementor) {
+    public AbstractAnimal(MoveImplementor implementor) {
         this.implementor = implementor;
     }
 

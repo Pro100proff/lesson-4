@@ -1,6 +1,6 @@
 package ru.geekbrains.facade;
 
-public interface ClientFacade {
+public interface PaymentFacade {
 
     boolean pay(String clientName, String fromCard, String toAccount, int amount);
 

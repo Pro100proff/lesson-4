@@ -6,7 +6,7 @@ public abstract class EmployeeComponent {
         throw new UnsupportedOperationException();
     }
 
-    public void sleepOnWork(){
+    public void sleep(){
         throw new UnsupportedOperationException();
     }
 

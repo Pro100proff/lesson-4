@@ -1,8 +1,8 @@
 package ru.geekbrains.bridge.after;
 
-public class Lemur extends AbstractAnimal {
+public class Seagle extends AbstractAnimal{
 
-    public Lemur(MoveImplementor implementor) {
+    public Seagle(MoveImplementor implementor) {
         super(implementor);
     }
 
@@ -14,6 +14,5 @@ public class Lemur extends AbstractAnimal {
     @Override
     public void live() {
         implementor.move();
-        implementor.sleep();
     }
 }

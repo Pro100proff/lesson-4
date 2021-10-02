@@ -1,8 +1,9 @@
 package ru.geekbrains.bridge.after;
 
-public class Fish extends Animal {
+import ru.geekbrains.bridge.Animal;
 
-    public Fish(MoveImplementor implementor) {
+public class Monkey extends AbstractAnimal {
+    public Monkey(MoveImplementor implementor) {
         super(implementor);
     }
 
@@ -14,6 +15,6 @@ public class Fish extends Animal {
     @Override
     public void live() {
         implementor.move();
-        implementor.speak();
+        implementor.sleep();
     }
 }

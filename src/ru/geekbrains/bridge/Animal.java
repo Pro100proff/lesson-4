@@ -1,4 +1,4 @@
-package ru.geekbrains.bridge.before;
+package ru.geekbrains.bridge;
 
 public interface Animal {
     void move();

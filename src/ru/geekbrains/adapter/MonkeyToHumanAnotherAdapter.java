@@ -20,7 +20,7 @@ public class MonkeyToHumanAnotherAdapter implements Human {
 
     @Override
     public void work() {
-        System.out.println("придется идти на работу");
+        System.out.println("собирать бананы с деревьев");
         monkey.move();
     }
 }

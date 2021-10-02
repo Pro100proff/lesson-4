@@ -1,12 +1,12 @@
 package ru.geekbrains.facade;
 
-public class ClientFacadeImpl implements ClientFacade{
+public class PaymentFacadeImpl implements PaymentFacade {
 
     private CheckService checkService;
     private AccountService accountService;
     private TransactionService transactionService;
 
-    public ClientFacadeImpl(CheckService checkService, AccountService accountService, TransactionService transactionService) {
+    public PaymentFacadeImpl(CheckService checkService, AccountService accountService, TransactionService transactionService) {
         this.checkService = checkService;
         this.accountService = accountService;
         this.transactionService = transactionService;
@@ -27,7 +27,7 @@ public class ClientFacadeImpl implements ClientFacade{
 
     @Override
     public boolean withdrawMoney(String card, int amount) {
-        checkService.checkOperation("operation");
+        checkService.checkOperation("withdraw money");
         int accountAmount = accountService.getAccountAmount(card);
         if (accountAmount >= amount){
             transactionService.transferMoney(card, null, amount);

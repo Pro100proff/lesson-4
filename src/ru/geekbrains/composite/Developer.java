@@ -1,6 +1,6 @@
 package ru.geekbrains.composite;
 
-public class Developer extends EmployeeComponent{
+public class Developer extends EmployeeComponent {
 
     private String name;
 

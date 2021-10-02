@@ -1,8 +1,8 @@
 package ru.geekbrains.bridge.after;
 
-public class Bird extends Animal {
+public class Tiger extends AbstractAnimal{
 
-    public Bird(MoveImplementor implementor) {
+    public Tiger(MoveImplementor implementor) {
         super(implementor);
     }
 

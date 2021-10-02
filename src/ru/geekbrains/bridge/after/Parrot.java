@@ -1,8 +1,10 @@
 package ru.geekbrains.bridge.after;
 
-public class Human extends Animal {
+import ru.geekbrains.bridge.Animal;
 
-    public Human(MoveImplementor implementor) {
+public class Parrot extends AbstractAnimal {
+
+    public Parrot(MoveImplementor implementor) {
         super(implementor);
     }
 
@@ -14,7 +16,6 @@ public class Human extends Animal {
     @Override
     public void live() {
         implementor.move();
-        implementor.speak();
         implementor.sleep();
     }
 }
